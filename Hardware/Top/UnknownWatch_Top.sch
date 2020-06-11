@@ -4301,8 +4301,11 @@ A light-sensitive transistor.</description>
 <part name="GND3" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
 <part name="SW6" library="LinnesLab-Switches" deviceset="SWITCH.MOM" device=""/>
-<part name="SW7" library="LinnesLab-Switches" deviceset="SWITCH.MOM" device=""/>
-<part name="SW8" library="LinnesLab-Switches" deviceset="SWITCH.MOM" device=""/>
+<part name="GND1" library="LinnesLab-Symbols" deviceset="GND" device=""/>
+<part name="SW1" library="LinnesLab-Switches" deviceset="SWITCH.MOM" device=""/>
+<part name="GND6" library="LinnesLab-Symbols" deviceset="GND" device=""/>
+<part name="SW2" library="LinnesLab-Switches" deviceset="SWITCH.MOM" device=""/>
+<part name="GND13" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4842,13 +4845,22 @@ Analog Outputs</text>
 <attribute name="NAME" x="365.76" y="-35.814" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="365.76" y="-43.434" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SW7" gate="G$1" x="388.62" y="-40.64" smashed="yes">
-<attribute name="NAME" x="388.62" y="-35.814" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="388.62" y="-43.434" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND1" gate="G$1" x="373.38" y="-50.8" smashed="yes">
+<attribute name="VALUE" x="373.38" y="-51.054" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SW8" gate="G$1" x="411.48" y="-40.64" smashed="yes">
-<attribute name="NAME" x="411.48" y="-35.814" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="411.48" y="-43.434" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="SW1" gate="G$1" x="403.86" y="-40.64" smashed="yes">
+<attribute name="NAME" x="403.86" y="-35.814" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="403.86" y="-43.434" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="GND6" gate="G$1" x="411.48" y="-50.8" smashed="yes">
+<attribute name="VALUE" x="411.48" y="-51.054" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SW2" gate="G$1" x="386.08" y="-71.12" smashed="yes">
+<attribute name="NAME" x="386.08" y="-66.294" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="386.08" y="-73.914" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="GND13" gate="G$1" x="393.7" y="-81.28" smashed="yes">
+<attribute name="VALUE" x="393.7" y="-81.534" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -5130,6 +5142,33 @@ Analog Outputs</text>
 <pinref part="GND3" gate="G$1" pin="GND"/>
 <wire x1="459.74" y1="-63.5" x2="459.74" y2="-60.96" width="0.1524" layer="91"/>
 <junction x="459.74" y="-60.96"/>
+</segment>
+<segment>
+<pinref part="SW6" gate="G$1" pin="3"/>
+<wire x1="370.84" y1="-40.64" x2="373.38" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="-40.64" x2="373.38" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="SW6" gate="G$1" pin="4"/>
+<wire x1="373.38" y1="-48.26" x2="373.38" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="-43.18" x2="370.84" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="3"/>
+<wire x1="408.94" y1="-40.64" x2="411.48" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="-40.64" x2="411.48" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="4"/>
+<wire x1="411.48" y1="-48.26" x2="411.48" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="-43.18" x2="408.94" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SW2" gate="G$1" pin="3"/>
+<wire x1="391.16" y1="-71.12" x2="393.7" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="-71.12" x2="393.7" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="G$1" pin="4"/>
+<wire x1="393.7" y1="-78.74" x2="393.7" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="-73.66" x2="391.16" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -5720,20 +5759,27 @@ Analog Outputs</text>
 <label x="467.36" y="-45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="SW6" gate="G$1" pin="3"/>
-<wire x1="370.84" y1="-40.64" x2="373.38" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="-40.64" x2="373.38" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="SW6" gate="G$1" pin="4"/>
-<wire x1="373.38" y1="-48.26" x2="373.38" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="-43.18" x2="370.84" y2="-43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
+<net name="SW1" class="0">
 <segment>
 <pinref part="SW6" gate="G$1" pin="1"/>
 <wire x1="360.68" y1="-40.64" x2="358.14" y2="-40.64" width="0.1524" layer="91"/>
+<label x="355.6" y="-40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="355.6" y1="-40.64" x2="360.68" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="360.68" y="-40.64"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="1"/>
+<wire x1="398.78" y1="-40.64" x2="396.24" y2="-40.64" width="0.1524" layer="91"/>
+<label x="393.7" y="-40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="393.7" y1="-40.64" x2="398.78" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="398.78" y="-40.64"/>
+</segment>
+<segment>
+<pinref part="SW2" gate="G$1" pin="1"/>
+<wire x1="381" y1="-71.12" x2="378.46" y2="-71.12" width="0.1524" layer="91"/>
+<label x="375.92" y="-71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="375.92" y1="-71.12" x2="381" y2="-71.12" width="0.1524" layer="91"/>
+<junction x="381" y="-71.12"/>
 </segment>
 </net>
 </nets>

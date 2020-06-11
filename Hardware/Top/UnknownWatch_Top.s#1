@@ -4444,17 +4444,21 @@ Programmer</text>
 <wire x1="426.72" y1="-99.06" x2="429.26" y2="-99.06" width="1.27" layer="97" style="longdash"/>
 <wire x1="340.36" y1="5.08" x2="340.36" y2="-96.52" width="1.27" layer="97" style="longdash"/>
 <wire x1="142.24" y1="-99.06" x2="144.78" y2="-99.06" width="1.27" layer="97" style="longdash"/>
-<wire x1="223.52" y1="5.08" x2="213.36" y2="5.08" width="1.27" layer="97" style="longdash"/>
 <wire x1="203.2" y1="5.08" x2="124.46" y2="5.08" width="1.27" layer="97" style="longdash"/>
 <wire x1="124.46" y1="5.08" x2="-30.48" y2="5.08" width="1.27" layer="97" style="longdash"/>
 <wire x1="124.46" y1="5.08" x2="124.46" y2="-99.06" width="1.27" layer="97" style="longdash"/>
 <wire x1="124.46" y1="-99.06" x2="121.92" y2="-99.06" width="1.27" layer="97" style="longdash"/>
-<wire x1="213.36" y1="5.08" x2="203.2" y2="5.08" width="1.27" layer="97" style="longdash"/>
+<wire x1="223.52" y1="5.08" x2="203.2" y2="5.08" width="1.27" layer="97" style="longdash"/>
 <wire x1="203.2" y1="5.08" x2="203.2" y2="-96.52" width="1.27" layer="97" style="longdash"/>
-<text x="-101.6" y="53.34" size="5.08" layer="97">Digital Outputs
+<text x="-109.22" y="33.02" size="5.08" layer="97">Digital Outputs
 CS.OLED
 RESET.OLED
 DC.OLED
+[SPI]
+[I2C]
+SD.CS
+(optional) 
+Card Detect 1 and 2
 
 Digital Inputs 
 3x buttons

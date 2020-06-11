@@ -4415,21 +4415,21 @@ if desired</text>
 to incident light. Will need
 to calibrate RL to based on
 the desired dynamic range.</text>
-<text x="48.26" y="167.64" size="5.08" layer="91">nRF52832 Module</text>
-<text x="375.92" y="149.86" size="5.08" layer="91">OLED</text>
-<text x="35.56" y="-17.78" size="5.08" layer="91">Power Management</text>
-<text x="149.86" y="-22.86" size="5.08" layer="91">SD Card</text>
-<text x="381" y="-20.32" size="5.08" layer="91">Buttons</text>
-<text x="246.38" y="-35.56" size="5.08" layer="91">Real-Time Clock</text>
-<text x="236.22" y="144.78" size="5.08" layer="91">Cortex Debugger/
+<text x="48.26" y="167.64" size="5.08" layer="97">nRF52832 Module</text>
+<text x="375.92" y="149.86" size="5.08" layer="97">OLED</text>
+<text x="35.56" y="-17.78" size="5.08" layer="97">Power Management</text>
+<text x="149.86" y="-22.86" size="5.08" layer="97">SD Card</text>
+<text x="381" y="-20.32" size="5.08" layer="97">Buttons</text>
+<text x="246.38" y="-35.56" size="5.08" layer="97">Real-Time Clock</text>
+<text x="236.22" y="144.78" size="5.08" layer="97">Cortex Debugger/
 Programmer</text>
-<text x="248.92" y="91.44" size="5.08" layer="91">RTC</text>
-<text x="436.88" y="-20.32" size="5.08" layer="91">Ambient Light Sensor</text>
+<text x="248.92" y="91.44" size="5.08" layer="97">RTC</text>
+<text x="436.88" y="-20.32" size="5.08" layer="97">Ambient Light Sensor</text>
 <wire x1="-40.64" y1="185.42" x2="523.24" y2="185.42" width="1.27" layer="94"/>
 <wire x1="523.24" y1="185.42" x2="523.24" y2="-106.68" width="1.27" layer="94"/>
 <wire x1="523.24" y1="-106.68" x2="-40.64" y2="-106.68" width="1.27" layer="94"/>
 <wire x1="-40.64" y1="-106.68" x2="-40.64" y2="185.42" width="1.27" layer="94"/>
-<wire x1="-30.48" y1="177.8" x2="518.16" y2="177.8" width="1.27" layer="94" style="longdash"/>
+<wire x1="-30.48" y1="177.8" x2="518.16" y2="177.8" width="1.27" layer="97" style="longdash"/>
 <wire x1="518.16" y1="177.8" x2="518.16" y2="-99.06" width="1.27" layer="94" style="longdash"/>
 <wire x1="518.16" y1="-99.06" x2="-30.48" y2="-99.06" width="1.27" layer="94" style="longdash"/>
 <wire x1="-30.48" y1="-99.06" x2="-30.48" y2="177.8" width="1.27" layer="94" style="longdash"/>

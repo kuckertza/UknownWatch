@@ -1250,7 +1250,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="31.0388" y="7.493" size="0.6096" layer="25" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="31.0388" y="1.143" size="0.6096" layer="27" ratio="20" align="top-center"/>
 </element>
-<element name="SW1" library="LinnesLab-Switches" package="TACTILE_SWITCH_SMD_6.2MM_TALL" value="SWITCH.MOM" x="20.4216" y="4.2418" smashed="yes">
+<element name="SW2" library="LinnesLab-Switches" package="TACTILE_SWITCH_SMD_6.2MM_TALL" value="SWITCH.MOM" x="20.4216" y="4.2418" smashed="yes">
 <attribute name="NAME" x="20.4216" y="7.4168" size="0.6096" layer="25" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="20.4216" y="1.0668" size="0.6096" layer="27" ratio="20" align="top-center"/>
 </element>
@@ -1457,8 +1457,8 @@ design rules under a new name.</description>
 <contactref element="USB2" pad="S3"/>
 <contactref element="SW6" pad="B1"/>
 <contactref element="SW6" pad="B2"/>
-<contactref element="SW1" pad="B1"/>
-<contactref element="SW1" pad="B2"/>
+<contactref element="SW2" pad="B1"/>
+<contactref element="SW2" pad="B2"/>
 <contactref element="C27" pad="2"/>
 <contactref element="C28" pad="1"/>
 <contactref element="C29" pad="2"/>
@@ -1690,12 +1690,6 @@ design rules under a new name.</description>
 <signal name="FRST">
 <contactref element="U6" pad="38"/>
 </signal>
-<signal name="DC.OLED">
-<contactref element="U3" pad="15"/>
-</signal>
-<signal name="RESET.OLED">
-<contactref element="U3" pad="14"/>
-</signal>
 <signal name="N$1">
 <contactref element="U3" pad="11"/>
 <contactref element="R6" pad="2"/>
@@ -1736,17 +1730,8 @@ design rules under a new name.</description>
 <contactref element="U3" pad="27"/>
 <wire x1="23.798" y1="19.0692" x2="25.6794" y2="25.5928" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="CS.OLED">
-<contactref element="U3" pad="13"/>
-</signal>
 <signal name="CD2">
 <contactref element="SD2" pad="CD2"/>
-</signal>
-<signal name="CD1">
-<contactref element="SD2" pad="CD1"/>
-</signal>
-<signal name="SD.CS">
-<contactref element="SD2" pad="2"/>
 </signal>
 <signal name="N$17">
 <contactref element="CHRG2" pad="5"/>
@@ -1771,11 +1756,6 @@ design rules under a new name.</description>
 <wire x1="6.978" y1="4.8006" x2="22.7203" y2="26.5557" width="0" layer="19" extent="1-1"/>
 <wire x1="4.8578" y1="5.177" x2="6.978" y2="4.8006" width="0" layer="19" extent="1-16"/>
 </signal>
-<signal name="CHRG.STAT">
-<contactref element="R12" pad="1"/>
-<contactref element="CHRG2" pad="1"/>
-<wire x1="13.6788" y1="11.2522" x2="18.0293" y2="9.9416" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="USB-">
 <contactref element="USB2" pad="2"/>
 <contactref element="R10" pad="1"/>
@@ -1789,11 +1769,6 @@ design rules under a new name.</description>
 <contactref element="C9" pad="1"/>
 <wire x1="39.2566" y1="31.3944" x2="52.0582" y2="31.7246" width="0" layer="19" extent="1-1"/>
 <wire x1="4.8578" y1="6.477" x2="39.2566" y2="31.3944" width="0" layer="19" extent="1-16"/>
-</signal>
-<signal name="BATT">
-<contactref element="R13" pad="1"/>
-<contactref element="R14" pad="2"/>
-<wire x1="11.9126" y1="9.4098" x2="11.7348" y2="4.2046" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
 <contactref element="D4" pad="-"/>
@@ -1818,11 +1793,6 @@ design rules under a new name.</description>
 <contactref element="C3" pad="1"/>
 <wire x1="7.8994" y1="33.8446" x2="11.8364" y2="33.8446" width="0" layer="19" extent="1-1"/>
 <wire x1="3.7084" y1="33.8446" x2="7.8994" y2="33.8446" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SW1">
-<contactref element="SW6" pad="A1"/>
-<contactref element="SW1" pad="A1"/>
-<wire x1="16.4466" y1="1.9918" x2="27.0638" y2="2.068" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$26">
 <contactref element="C28" pad="2"/>
@@ -1933,6 +1903,64 @@ design rules under a new name.</description>
 </signal>
 <signal name="VBAT">
 <contactref element="U4" pad="3"/>
+</signal>
+<signal name="D27/CHRG.STATUS">
+<contactref element="U6" pad="4"/>
+<contactref element="R12" pad="1"/>
+<contactref element="CHRG2" pad="1"/>
+<wire x1="18.0293" y1="9.9416" x2="25.8546" y2="27.4924" width="0" layer="19" extent="1-1"/>
+<wire x1="13.6788" y1="11.2522" x2="18.0293" y2="9.9416" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="A4/BATT">
+<contactref element="U6" pad="5"/>
+<contactref element="R13" pad="1"/>
+<contactref element="R14" pad="2"/>
+<wire x1="11.9126" y1="9.4098" x2="25.8546" y2="26.7924" width="0" layer="19" extent="1-1"/>
+<wire x1="11.7348" y1="4.2046" x2="11.9126" y2="9.4098" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="D7/SD.CS">
+<contactref element="U6" pad="20"/>
+<contactref element="SD2" pad="2"/>
+<wire x1="30.5092" y1="7.1622" x2="31.8546" y2="20.4424" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="D5/CD1">
+<contactref element="U6" pad="18"/>
+<contactref element="SD2" pad="CD1"/>
+<wire x1="20.7092" y1="13.0622" x2="30.4546" y2="20.4424" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="D11/SW1">
+<contactref element="U6" pad="25"/>
+<contactref element="SW6" pad="A1"/>
+<wire x1="27.0638" y1="2.068" x2="35.0546" y2="21.8924" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="D15/SW2">
+<contactref element="U6" pad="29"/>
+<contactref element="SW2" pad="A1"/>
+<wire x1="16.4466" y1="1.9918" x2="35.0546" y2="24.6924" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="D16/CS.OLED">
+<contactref element="U6" pad="30"/>
+<contactref element="U3" pad="13"/>
+<wire x1="13.998" y1="19.0692" x2="35.0546" y2="25.3924" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="D4/DC.OLED">
+<contactref element="U6" pad="17"/>
+<contactref element="U3" pad="15"/>
+<wire x1="15.398" y1="19.0692" x2="29.7546" y2="20.4424" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="D3/RESET.OLED">
+<contactref element="U6" pad="16"/>
+<contactref element="U3" pad="14"/>
+<wire x1="14.698" y1="19.0692" x2="29.0546" y2="20.4424" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="D29/LED.CTRL">
+<contactref element="U6" pad="6"/>
+</signal>
+<signal name="A6/TIA">
+<contactref element="U6" pad="7"/>
+</signal>
+<signal name="A7/PPG">
+<contactref element="U6" pad="8"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

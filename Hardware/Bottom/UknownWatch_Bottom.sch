@@ -2815,13 +2815,6 @@ and LEDs</text>
 <junction x="38.1" y="27.94"/>
 </segment>
 </net>
-<net name="PPG" class="0">
-<segment>
-<wire x1="137.16" y1="27.94" x2="139.7" y2="27.94" width="0.1524" layer="91"/>
-<label x="139.7" y="27.94" size="1.27" layer="95" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="B2"/>
-</segment>
-</net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="C15" gate="G$1" pin="2"/>
@@ -2935,6 +2928,11 @@ and LEDs</text>
 <pinref part="J1" gate="G$1" pin="7"/>
 <wire x1="91.44" y1="-15.24" x2="93.98" y2="-15.24" width="0.1524" layer="91"/>
 <label x="93.98" y="-15.24" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="137.16" y1="27.94" x2="139.7" y2="27.94" width="0.1524" layer="91"/>
+<label x="139.7" y="27.94" size="1.27" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="B2"/>
 </segment>
 </net>
 </nets>

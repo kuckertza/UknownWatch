@@ -1,9 +1,19 @@
-void setup() {
-  // put your setup code here, to run once:
+#include "UnknownWatchPower.h"
+
+UnknownWatchPower pwr;
+void setup() 
+{
+  pwr.begin();
 
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop() 
+{
+  pwr.isCharging();
+
+  //print info to watch screen
 
 }
+
+//.h -declaration - variables, functions
+//.cpp definitions C++ (what functions do)

@@ -2173,7 +2173,9 @@ Allows current flow when high potential at base.</description>
 <part name="C1" library="LinnesLab-Passives" deviceset="CAPACITOR" device="0603" value="100n"/>
 <part name="GND2" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
-<part name="J1" library="LinnesLab-Connectors" deviceset="CONN_07" device=""/>
+<part name="J1" library="LinnesLab-Connectors" deviceset="CONN_07" device="-1.27MM"/>
+<part name="GND3" library="LinnesLab-Symbols" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2413,6 +2415,12 @@ and LEDs</text>
 <attribute name="VALUE" x="81.28" y="-35.306" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="81.28" y="-12.192" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="GND3" gate="G$1" x="91.44" y="-38.1" smashed="yes">
+<attribute name="VALUE" x="91.44" y="-38.354" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SUPPLY1" gate="G$1" x="91.44" y="-10.16" smashed="yes">
+<attribute name="VALUE" x="91.44" y="-7.366" size="1.778" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2515,6 +2523,11 @@ and LEDs</text>
 <pinref part="GND2" gate="G$1" pin="GND"/>
 <wire x1="5.08" y1="-27.94" x2="5.08" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="3"/>
+<pinref part="GND3" gate="G$1" pin="GND"/>
+<wire x1="91.44" y1="-25.4" x2="91.44" y2="-35.56" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -2599,6 +2612,11 @@ and LEDs</text>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 <wire x1="5.08" y1="-15.24" x2="5.08" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
+<wire x1="91.44" y1="-22.86" x2="91.44" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -2616,6 +2634,11 @@ and LEDs</text>
 <wire x1="43.18" y1="-20.32" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
 <label x="45.72" y="-20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="-30.48" x2="93.98" y2="-30.48" width="0.1524" layer="91"/>
+<label x="93.98" y="-30.48" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -2632,6 +2655,11 @@ and LEDs</text>
 <pinref part="IMU1" gate="G$1" pin="SCL"/>
 <wire x1="43.18" y1="-25.4" x2="45.72" y2="-25.4" width="0.1524" layer="91"/>
 <label x="45.72" y="-25.4" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="-27.94" x2="93.98" y2="-27.94" width="0.1524" layer="91"/>
+<label x="93.98" y="-27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A6/TIA" class="0">

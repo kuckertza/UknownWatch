@@ -2147,7 +2147,7 @@ Allows current flow when high potential at base.</description>
 <part name="C18" library="LinnesLab-Passives" deviceset="CAPACITOR" device="0603" value="100n"/>
 <part name="GND22" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
-<part name="U1" library="LinnesLab-DigitalIC" deviceset="AD5242" device="-SO16" package3d_urn="urn:adsk.eagle:package:16423/2"/>
+<part name="AD52042" library="LinnesLab-DigitalIC" deviceset="AD5242" device="-SO16" package3d_urn="urn:adsk.eagle:package:16423/2"/>
 <part name="SUPPLY17" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
 <part name="GND23" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 <part name="R19" library="LinnesLab-Passives" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661944/2" value="220k"/>
@@ -2315,7 +2315,7 @@ and LEDs</text>
 <instance part="SUPPLY16" gate="G$1" x="106.68" y="35.56" smashed="yes">
 <attribute name="VALUE" x="106.68" y="38.354" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="U1" gate="G$1" x="121.92" y="25.4" smashed="yes">
+<instance part="AD52042" gate="G$1" x="121.92" y="25.4" smashed="yes">
 <attribute name="NAME" x="114.3" y="36.83" size="2.032" layer="95"/>
 <attribute name="VALUE" x="114.3" y="8.89" size="2.032" layer="96"/>
 </instance>
@@ -2460,10 +2460,10 @@ and LEDs</text>
 <junction x="139.7" y="17.78"/>
 <wire x1="137.16" y1="15.24" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
 <junction x="139.7" y="15.24"/>
-<pinref part="U1" gate="G$1" pin="VSS"/>
-<pinref part="U1" gate="G$1" pin="DGND"/>
-<pinref part="U1" gate="G$1" pin="AD1"/>
-<pinref part="U1" gate="G$1" pin="AD0"/>
+<pinref part="AD52042" gate="G$1" pin="VSS"/>
+<pinref part="AD52042" gate="G$1" pin="DGND"/>
+<pinref part="AD52042" gate="G$1" pin="AD1"/>
+<pinref part="AD52042" gate="G$1" pin="AD0"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
@@ -2572,8 +2572,8 @@ and LEDs</text>
 <wire x1="106.68" y1="20.32" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
 <junction x="106.68" y="22.86"/>
 <pinref part="SUPPLY16" gate="G$1" pin="3.3V"/>
-<pinref part="U1" gate="G$1" pin="VDD"/>
-<pinref part="U1" gate="G$1" pin="!SHDN"/>
+<pinref part="AD52042" gate="G$1" pin="VDD"/>
+<pinref part="AD52042" gate="G$1" pin="!SHDN"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="V+"/>
@@ -2622,7 +2622,7 @@ and LEDs</text>
 <segment>
 <wire x1="109.22" y1="15.24" x2="104.14" y2="15.24" width="0.1524" layer="91"/>
 <label x="104.14" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="SDA"/>
+<pinref part="AD52042" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="SDA"/>
@@ -2644,7 +2644,7 @@ and LEDs</text>
 <segment>
 <wire x1="109.22" y1="17.78" x2="104.14" y2="17.78" width="0.1524" layer="91"/>
 <label x="104.14" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="SCL"/>
+<pinref part="AD52042" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="SCL"/>
@@ -2666,7 +2666,7 @@ and LEDs</text>
 <segment>
 <wire x1="109.22" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
 <label x="104.14" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="W1"/>
+<pinref part="AD52042" gate="G$1" pin="W1"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="2"/>
@@ -2709,7 +2709,7 @@ and LEDs</text>
 <segment>
 <wire x1="109.22" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
 <label x="104.14" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="B1"/>
+<pinref part="AD52042" gate="G$1" pin="B1"/>
 </segment>
 </net>
 <net name="LED.C" class="0">
@@ -2763,7 +2763,7 @@ and LEDs</text>
 <segment>
 <wire x1="137.16" y1="30.48" x2="139.7" y2="30.48" width="0.1524" layer="91"/>
 <label x="139.7" y="30.48" size="1.27" layer="95" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="W2"/>
+<pinref part="AD52042" gate="G$1" pin="W2"/>
 </segment>
 <segment>
 <pinref part="OP3" gate="G$1" pin="-IN"/>
@@ -2783,28 +2783,28 @@ and LEDs</text>
 <segment>
 <wire x1="109.22" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
 <label x="104.14" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="A1"/>
+<pinref part="AD52042" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="G.A2" class="0">
 <segment>
 <wire x1="137.16" y1="33.02" x2="139.7" y2="33.02" width="0.1524" layer="91"/>
 <label x="139.7" y="33.02" size="1.27" layer="95" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="A2"/>
+<pinref part="AD52042" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="G.O2" class="0">
 <segment>
 <wire x1="137.16" y1="25.4" x2="139.7" y2="25.4" width="0.1524" layer="91"/>
 <label x="139.7" y="25.4" size="1.27" layer="95" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="O2"/>
+<pinref part="AD52042" gate="G$1" pin="O2"/>
 </segment>
 </net>
 <net name="G.O1" class="0">
 <segment>
 <wire x1="109.22" y1="33.02" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
 <label x="104.14" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="O1"/>
+<pinref part="AD52042" gate="G$1" pin="O1"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -2960,7 +2960,7 @@ and LEDs</text>
 <segment>
 <wire x1="137.16" y1="27.94" x2="139.7" y2="27.94" width="0.1524" layer="91"/>
 <label x="139.7" y="27.94" size="1.27" layer="95" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="B2"/>
+<pinref part="AD52042" gate="G$1" pin="B2"/>
 </segment>
 </net>
 </nets>
